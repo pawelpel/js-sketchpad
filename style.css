@@ -1,9 +1,10 @@
 body {
-    background-color: dimgray;
+    background-color: rgb(128, 128, 128);
     font-family: sans-serif;
 }
 
 h1 {
+    color: #ffffff;
     padding: 5px;
     display: block;
     margin: 0 auto;
@@ -50,6 +51,8 @@ input[type=range] {
 #range-value {
     --moz-box-sizing: border-box;
     box-sizing: border-box;
+    
+    font-size: 13px;
     
     margin: 12px 5px 0px 2px;
     display: block;

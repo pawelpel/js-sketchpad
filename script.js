@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', function(){
     
+    
+    // Title animation 
+    
+    var title = document.querySelector('title');
+    var tmp = title.textContent;
+    var counter = 0;
+    setInterval(function(){
+        title.textContent = tmp.slice(counter) + " " + tmp.slice(0, counter);
+        counter += 1;
+        if(counter > tmp.length + 1){
+            counter = 0;
+        }
+    }, 500)
+    
+    
+    
     var changeToArray = function(notArray){
         return [].slice.call(notArray);
     }
